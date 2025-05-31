@@ -1,0 +1,16 @@
+{
+    "name": "bnb-matteo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.8",
+        "tailwindcss": "^4.1.8"
+    },
+    "scripts": {
+        "dev": "npx @tailwindcss/cli -i ./src/style.css -o ./src/compiled.css --watch"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    }
+}
