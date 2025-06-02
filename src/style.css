@@ -8,4 +8,15 @@ html *
 }
 
 @theme {
+            --color-ferra-50: #f9f6f8;
+            --color-ferra-100: #f4eff2;
+            --color-ferra-200: #eae0e5;
+            --color-ferra-300: #dac7cf;
+            --color-ferra-400: #c3a3b1;
+            --color-ferra-500: #ae8696;
+            --color-ferra-600: #976b7b;
+            --color-ferra-700: #77515d;
+            --color-ferra-800: #6a4a54;
+            --color-ferra-900: #5b4048;
+            --color-ferra-900: #342328;
 }
