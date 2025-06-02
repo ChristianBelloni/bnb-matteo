@@ -16,20 +16,20 @@
     <link rel="preload" href="../assets/stock-3.jpg" as="image" type="image/jpeg" />
 </head>
 
-<body class="font-[Open_Sans] bg-stone-200 overflow-x-hidden">
+<body class="font-[Open_Sans] bg-stone-200 w-screen">
 
-    <div class="w-screen h-screen">
-        <img class="object-cover h-screen xl:w-screen"
+    <div class="w-full h-screen">
+        <img class="object-cover h-screen w-screen"
             src="https://res.cloudinary.com/amenitiz/image/upload/h_1080,dpr_auto,c_scale,q_auto:best/v1729151486/lvtdpozozllulobziknr.jpg" />
         <div
-            class="absolute p-6 top-1/2 left-1/2 -translate-x-1/2 bg-stone-400/70 rounded-sm -translate-y-4/5 w-screen xl:w-fit duration-[800ms] taos:opacity-0">
-            <h1 class="text-7xl text-white pb-3 whitespace-nowrap">NOME B&B</h1>
+            class="absolute p-6 top-1/2 left-1/2 -translate-x-1/2 bg-stone-400/70 rounded-sm -translate-y-4/5 w-full xl:w-fit duration-[800ms] taos:opacity-0">
+            <h1 class="text-7xl text-white pb-3 whitespace-nowrap text-center">NOME B&B</h1>
             <p class="text-3xl text-white text-center whitespace-nowrap">Breve descrizione</p>
         </div>
 
-        <div class="absolute bottom-1/10 right-0 p-3 pr-0 flex flex-col gap-4 justify-end items-end">
+        <div class="absolute bottom-1/10 right-0 p-3 pr-0 flex flex-col gap-4 justify-end items-end overflow-hidden">
             <div
-                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200">
+                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
                 <a href="https://maps.app.goo.gl/eWgXARuMrVjq44A36" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -43,7 +43,7 @@
             </div>
 
             <div
-                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200">
+                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
                 <a href="tel:+390000000000" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -58,19 +58,13 @@
         <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
             <div class="flex flex-col gap-3">
                 <h1 class="text-5xl pb-6">Titolo sezione</h1>
-                <p class="text-lg">
+                <p class="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
                     fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
-                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
-                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
-                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
-                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
-                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
-                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
-                    justo. Quisque porttitor commodo diam non sodales.
+                    Ut eget eleifend nisl.
                 </p>
             </div>
-            <img src="../assets/stock-1.jpg" />
+            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
         </div>
 
         <div class="relative h-fit">
@@ -85,19 +79,15 @@
         </div>
 
         <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
-            <img src="../assets/stock-1.jpg" />
+            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
             <div class="flex flex-col gap-3">
                 <h1 class="text-5xl pb-6">Titolo sezione 2</h1>
-                <p class="text-lg">
+                <p class="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
                     fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
                     Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
                     rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
-                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
-                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
-                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
-                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
-                    justo. Quisque porttitor commodo diam non sodales.
+                    at dolor pretium euismod.
                 </p>
             </div>
         </div>
@@ -116,19 +106,15 @@
         <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
             <div class="flex flex-col gap-3">
                 <h1 class="text-5xl pb-6">Titolo sezione 3</h1>
-                <p class="text-lg">
+                <p class="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
                     fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
                     Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
                     rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
-                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
-                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
-                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
-                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
-                    justo. Quisque porttitor commodo diam non sodales.
+                    at dolor pretium euismod.
                 </p>
             </div>
-            <img src="../assets/stock-1.jpg" />
+            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
         </div>
 
         <div class="relative h-fit">
