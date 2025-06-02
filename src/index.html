@@ -4,32 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="style.css" />
+    <link src="./style.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/logo.ico">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link rel="preload" href="../assets/stock-1.jpg" as="image" type="image/jpeg" />
-    <link rel="preload" href="../assets/stock-2.jpg" as="image" type="image/jpeg" />
-    <link rel="preload" href="../assets/stock-3.jpg" as="image" type="image/jpeg" />
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-ferra-50: #f9f6f8;
+            --color-ferra-100: #f4eff2;
+            --color-ferra-200: #eae0e5;
+            --color-ferra-300: #dac7cf;
+            --color-ferra-400: #c3a3b1;
+            --color-ferra-500: #ae8696;
+            --color-ferra-600: #976b7b;
+            --color-ferra-700: #77515d;
+            --color-ferra-800: #6a4a54;
+            --color-ferra-900: #5b4048;
+            --color-ferra-950: #342328;
+      }
+    </style>
 </head>
 
-<body class="font-[Open_Sans] bg-stone-200 w-screen">
-
+<body class="font-[Open_Sans] bg-ferra-200 w-screen">
     <div class="w-full h-screen">
-        <img class="object-cover h-screen w-screen"
-            src="https://res.cloudinary.com/amenitiz/image/upload/h_1080,dpr_auto,c_scale,q_auto:best/v1729151486/lvtdpozozllulobziknr.jpg" />
+        <img class="object-cover h-screen w-screen" src="../assets/imgs/ZEL_0610.jpg" />
         <div
-            class="absolute p-6 top-1/2 left-1/2 -translate-x-1/2 bg-stone-400/70 rounded-sm -translate-y-4/5 w-full xl:w-fit duration-[800ms] taos:opacity-0">
-            <h1 class="text-7xl text-white pb-3 whitespace-nowrap text-center">NOME B&B</h1>
-            <p class="text-3xl text-white text-center whitespace-nowrap">Breve descrizione</p>
+            class="absolute p-6 top-1/2 w-screen bg-white/70 -translate-y-4/5 xl:w-screen duration-[800ms] taos:opacity-0 flex flex-col">
+            <img src="../assets/logo.png" class="w-56 self-center" />
+            <h1 class="text-6xl pb-3 whitespace-nowrap text-center text-ferra-950">Lucy's Home</h1>
+
         </div>
 
         <div class="absolute bottom-1/10 right-0 p-3 pr-0 flex flex-col gap-4 justify-end items-end overflow-hidden">
             <div
-                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
+                class="text-ferra-900 bg-ferra-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
                 <a href="https://maps.app.goo.gl/eWgXARuMrVjq44A36" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -43,7 +56,7 @@
             </div>
 
             <div
-                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
+                class="text-ferra-900 bg-ferra-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200 overflow-hidden">
                 <a href="tel:+390000000000" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -55,89 +68,85 @@
             </div>
         </div>
 
-        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+        <div class="bg-ferra-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
             <div class="flex flex-col gap-3">
-                <h1 class="text-5xl pb-6">Titolo sezione</h1>
+                <h1 class="text-5xl pb-6">Come raggiungerci</h1>
                 <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
-                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
-                    Ut eget eleifend nisl.
+                    Lucy’s House è situato a Cologno Monzese, a 11 km da Stazione Metro Lambrate e 11 km da Stazione
+                    Metro Centrale. Il parcheggio privato può essere utilizzato a un costo aggiuntivo. L'alloggio è
+                    interamente non fumatori ed è ubicato a 10 km da Villa Fiorita.
                 </p>
             </div>
-            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
+            <img class="hidden xl:block" src="../assets/imgs/ZEL_0545.jpg" />
         </div>
 
         <div class="relative h-fit">
-            <div class="w-full relative flex flex-col bg-stone-300">
+            <div class="w-full relative flex flex-col bg-ferra-300">
                 <div
-                    class="absolute left-0 xl:left-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    class="absolute left-0 xl:left-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-ferra-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
                     consectetur libero suscipit
                 </div>
-                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-3.jpg" />
+                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/imgs/ZEL_0546.jpg" />
             </div>
         </div>
 
-        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
-            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
+        <div class="bg-ferra-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+            <img class="hidden xl:block" src="../assets/imgs/ZEL_0572.jpg" />
             <div class="flex flex-col gap-3">
-                <h1 class="text-5xl pb-6">Titolo sezione 2</h1>
+                <h1 class="text-5xl pb-6">I nostri servizi</h1>
                 <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
-                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
-                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
-                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
-                    at dolor pretium euismod.
+                    Tutte le camere prevedono un impianto di aria condizionata, un frigorifero, una lavastoviglie e una
+                    macchina da caffè, oltre a bidet, set di cortesia e scrivania. Con un bagno privato che comprende
+                    una doccia e l'asciugacapelli, tutte le camere di questo affittacamere vantano anche il WiFi
+                    gratuito. Presso Lucy’s House, tutte le camere sono provviste di armadio e TV a schermo piatto.
                 </p>
             </div>
         </div>
 
         <div class="relative h-fit">
-            <div class="w-full relative flex flex-col bg-stone-300">
+            <div class="w-full relative flex flex-col bg-ferra-300">
                 <div
-                    class="absolute right-0 xl:right-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    class="absolute right-0 xl:right-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-ferra-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
                     consectetur libero suscipit
                 </div>
-                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-2.jpg" />
+                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/imgs/ZEL_0576.jpg" />
             </div>
         </div>
 
-        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+        <div class="bg-ferra-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
             <div class="flex flex-col gap-3">
-                <h1 class="text-5xl pb-6">Titolo sezione 3</h1>
+                <h1 class="text-5xl pb-6">Nei dintorni</h1>
                 <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
-                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
-                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
-                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
-                    at dolor pretium euismod.
+                    Bosco Verticale è a 11 km da questa struttura, mentre GAM Milano si trova a 12 km dalla struttura.
+                    Aeroporto di Milano Linate si trova a 15 km di distanza.
                 </p>
             </div>
-            <img class="hidden xl:block" src="../assets/stock-1.jpg" />
+            <img class="hidden xl:block" src="../assets/imgs/ZEL_0563.jpg" />
         </div>
 
         <div class="relative h-fit">
-            <div class="w-full relative flex flex-col bg-stone-300">
+            <div class="w-full relative flex flex-col bg-ferra-300">
                 <div
-                    class="absolute top-30 left-0 xl:left-20 xl:rounded xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    class="absolute top-30 left-0 xl:left-20 xl:rounded xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-ferra-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
                     consectetur libero suscipit
                 </div>
-                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-1.jpg" />
+                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/imgs/ZEL_0569.jpg" />
             </div>
         </div>
 
 
         <div class="grid grid-cols-1 xl:grid-cols-2 xl:px-32">
 
-            <section class="bg-stone-200 p-8 px-12 xl:pl-56 flex flex-col">
+            <section class="bg-ferra-200 p-8 px-12 xl:pl-56 flex flex-col">
 
-                <h1 class="text-stone-950 text-3xl pb-6">Dove siamo</h1>
+                <h1 class="text-ferra-950 text-3xl pb-6">Dove siamo</h1>
                 <div class="flex gap-3 items-center pb-6">
                     <img src="../assets/google-map-icon.svg" class="w-6" />
-                    <a class="text-center">Milano, Via esempio 15</a>
-                    <a href="https://maps.app.goo.gl/eWgXARuMrVjq44A36">
+                    <a class="text-center">Cologno monzese (MI), Via Fabio Filzi 28 20093</a>
+                    <a href="https://maps.app.goo.gl/vExUTs2DNBcGx6nN8">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -147,17 +156,17 @@
 
                     </a>
                 </div>
-                <div class="border border-solid border-stone-500 w-fit xl:self-start">
+                <div class="border border-solid border-ferra-500 w-fit xl:self-start">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.0861930927!2d9.095332102733757!3d45.46282463024406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilano%20MI!5e0!3m2!1sit!2sit!4v1748858200683!5m2!1sit!2sit"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5588.148812373571!2d9.265277176711933!3d45.548828727787566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b85d1edd9569%3A0x5ab49bf23cd8a0f2!2sVia%20Fabio%20Filzi%2C%2028%2C%2020093%20Cologno%20Monzese%20MI!5e0!3m2!1sit!2sit!4v1748873536488!5m2!1sit!2sit"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </section>
 
-            <section class="bg-stone-200 p-8 px-20 xl:pr-56 text-stone-950">
-                <h1 class="text-stone-150 text-3xl pb-6">Contatti</h1>
+            <section class="bg-ferra-200 p-8 px-20 xl:pr-56 text-ferra-950">
+                <h1 class="text-ferra-150 text-3xl pb-6">Contatti</h1>
                 <div class="grid grid-cols-8 gap-4">
                     <div class="w-12">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -166,7 +175,7 @@
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
                     </div>
-                    <a class="col-span-7">+39 0000000000</a>
+                    <a href="tel:+393880642072" class="col-span-7">+39 388 0642072</a>
                     <div class="w-8">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                             stroke="currentColor" className="size-6">
@@ -174,9 +183,10 @@
                                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                         </svg>
                     </div>
-                    <a class="col-span-7">indirizzo@mail.com</a>
+                    <a href="mailto:lucyshouse.28@gmail.com" class="col-span-7">lucyshouse.28@gmail.com</a>
                     <img src="../assets/booking-icon.svg" class="w-8" />
-                    <a href="https://www.booking.com/" class="object-cover">booking.com</a>
+                    <a href="https://www.booking.com/hotel/it/lucys-house-cologno-monzese.it.html"
+                        class="object-cover">booking.com</a>
                 </div>
             </section>
 
