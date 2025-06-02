@@ -16,7 +16,7 @@
     <link rel="preload" href="../assets/stock-3.jpg" as="image" type="image/jpeg" />
 </head>
 
-<body class="font-[Open_Sans]">
+<body class="font-[Open_Sans] bg-stone-200 overflow-x-hidden">
 
     <div class="w-screen h-screen">
         <img class="object-cover h-screen xl:w-screen"
@@ -28,53 +28,55 @@
         </div>
 
         <div class="absolute bottom-1/10 right-0 p-3 pr-0 flex flex-col gap-4 justify-end items-end">
-            <div class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5">
-                <a href="https://maps.app.goo.gl/eWgXARuMrVjq44A36">
+            <div
+                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200">
+                <a href="https://maps.app.goo.gl/eWgXARuMrVjq44A36" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
                     </svg>
+                    <p class="w-33">
+                        apri
+                        indicazioni</p>
                 </a>
             </div>
 
-            <div class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5">
-                <a href="tel:+390000000000">
+            <div
+                class="text-stone-600 bg-stone-100/70 rounded-l p-4 mb-5 translate-x-37 hover:translate-x-0 transition-all duration-200">
+                <a href="tel:+390000000000" class="flex gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
+                    <p class="w-33">chiamaci</p>
                 </a>
             </div>
         </div>
 
-        <div class="relative h-fit">
-            <div class="w-full relative flex flex-col bg-stone-300">
-                <div
-                    class="absolute top-30 left-0 xl:left-20 xl:rounded xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-5xl text-stone-600 bg-stone-100/90 xl:bg-stone-300/60 delay-[100ms] duration-[800ms] taos:opacity-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
-                    consectetur libero suscipit
-                </div>
-                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-1.jpg" />
+        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-5xl pb-6">Titolo sezione</h1>
+                <p class="text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
+                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
+                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
+                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
+                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
+                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
+                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
+                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
+                    justo. Quisque porttitor commodo diam non sodales.
+                </p>
             </div>
+            <img src="../assets/stock-1.jpg" />
         </div>
 
         <div class="relative h-fit">
             <div class="w-full relative flex flex-col bg-stone-300">
                 <div
-                    class="absolute right-0 xl:right-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-5xl text-stone-600 bg-stone-100/90 xl:bg-stone-300/60 delay-[100ms] duration-[800ms] taos:opacity-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
-                    consectetur libero suscipit
-                </div>
-                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-2.jpg" />
-            </div>
-        </div>
-
-        <div class="relative h-fit">
-            <div class="w-full relative flex flex-col bg-stone-300">
-                <div
-                    class="absolute left-0 xl:left-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-5xl text-stone-600 bg-stone-100/90 xl:bg-stone-300/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    class="absolute left-0 xl:left-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
                     consectetur libero suscipit
                 </div>
@@ -82,8 +84,66 @@
             </div>
         </div>
 
+        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+            <img src="../assets/stock-1.jpg" />
+            <div class="flex flex-col gap-3">
+                <h1 class="text-5xl pb-6">Titolo sezione 2</h1>
+                <p class="text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
+                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
+                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
+                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
+                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
+                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
+                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
+                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
+                    justo. Quisque porttitor commodo diam non sodales.
+                </p>
+            </div>
+        </div>
 
-        <div class="grid grid-cols-1 xl:grid-cols-2">
+        <div class="relative h-fit">
+            <div class="w-full relative flex flex-col bg-stone-300">
+                <div
+                    class="absolute right-0 xl:right-20 xl:rounded top-30 xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
+                    consectetur libero suscipit
+                </div>
+                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-2.jpg" />
+            </div>
+        </div>
+
+        <div class="bg-stone-100 p-8 grid grid-cols-1 xl:grid-cols-2 gap-3">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-5xl pb-6">Titolo sezione 3</h1>
+                <p class="text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan urna eget ipsum dignissim
+                    fermentum. Curabitur non magna porta, malesuada neque in, lobortis urna. Curabitur nec dui tellus.
+                    Ut eget eleifend nisl. Praesent mollis tortor eget justo porta, sed volutpat augue egestas. Aenean
+                    rhoncus lorem ut auctor luctus. Ut vitae arcu eget justo sagittis consequat a nec felis. Ut ut ante
+                    at dolor pretium euismod. Donec nisi purus, hendrerit eget pellentesque eget, efficitur tincidunt
+                    tellus. Nam placerat at arcu ut ullamcorper. In in nisl ac nisi lacinia porta. Praesent dapibus
+                    lacus vitae turpis ornare, non laoreet magna gravida. Nam eleifend sodales lacus sit amet facilisis.
+                    Cras eleifend, eros in vestibulum congue, ex tortor fringilla arcu, eget rhoncus mauris metus ac
+                    justo. Quisque porttitor commodo diam non sodales.
+                </p>
+            </div>
+            <img src="../assets/stock-1.jpg" />
+        </div>
+
+        <div class="relative h-fit">
+            <div class="w-full relative flex flex-col bg-stone-300">
+                <div
+                    class="absolute top-30 left-0 xl:left-20 xl:rounded xl:top-20 w-8/12 xl:w-1/4 p-6  xl:text-3xl text-stone-950 bg-white/90 xl:bg-white-100/60 delay-[100ms] duration-[800ms] taos:opacity-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus ex eget turpis aliquam, quis
+                    consectetur libero suscipit
+                </div>
+                <img class="object-cover xl:w-screen h-screen self-end" src="../assets/stock-1.jpg" />
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 xl:grid-cols-2 xl:px-32">
 
             <section class="bg-stone-200 p-8 px-12 xl:pl-56 flex flex-col">
 
@@ -110,18 +170,18 @@
 
             </section>
 
-            <section class="bg-stone-700 p-8 px-20 xl:pr-56 text-stone-100">
+            <section class="bg-stone-200 p-8 px-20 xl:pr-56 text-stone-950">
                 <h1 class="text-stone-150 text-3xl pb-6">Contatti</h1>
                 <div class="grid grid-cols-8 gap-4">
-                    <div class="w-6">
+                    <div class="w-12">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
+                            stroke="currentColor" class="size-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
                     </div>
                     <a class="col-span-7">+39 0000000000</a>
-                    <div class="w-6">
+                    <div class="w-8">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                             stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round"
@@ -129,7 +189,7 @@
                         </svg>
                     </div>
                     <a class="col-span-7">indirizzo@mail.com</a>
-                    <img src="../assets/booking-icon.svg" />
+                    <img src="../assets/booking-icon.svg" class="w-8" />
                     <a href="https://www.booking.com/" class="object-cover">booking.com</a>
                 </div>
             </section>
